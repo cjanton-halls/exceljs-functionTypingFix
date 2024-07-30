@@ -352,6 +352,8 @@ export interface CellFormulaValue {
 	formula: string;
 	result?: number | string | boolean | Date | CellErrorValue;
 	date1904?: boolean;
+	ref?: string;
+	shareType?: string;
 }
 
 export interface CellSharedFormulaValue {
@@ -359,6 +361,8 @@ export interface CellSharedFormulaValue {
 	readonly formula?: string;
 	result?: number | string | boolean | Date | CellErrorValue;
 	date1904?: boolean;
+	ref?: string;
+	shareType?: string;
 }
 
 export declare enum ValueType {
